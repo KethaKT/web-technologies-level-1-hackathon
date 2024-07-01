@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Heading and Red Paragraph</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        p {
+            color: red;
+            font-size: 15px;
+        }
+        img {
+            border: 5px solid green;
+            width: 500px;
+            height: 500px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        fieldset {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Blue Heading</h1>
+    <p>This is a Red Paragraph with font size 15px.</p>
+    <a href="https://www.google.com" target="_blank">Visit Google.com</a>
+    <section>
+        <img src="pexels-tirachard-kumtanom-112571-733853.jpg" alt="Tirachard Kumtanom">
+    </section>
+    <section>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <label for="subjects">Subjects:</label>
+            <select id="subjects" name="subjects" multiple required>
+                <option value="english">English</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="art_and_craft">Art and Craft</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+            </select><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="hidden" id="sessionId" name="sessionId" value="123456">
+
+            <button type="reset">Cancel</button>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
